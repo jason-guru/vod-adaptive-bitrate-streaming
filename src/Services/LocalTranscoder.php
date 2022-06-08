@@ -1,10 +1,11 @@
 <?php
-namespace App\Services\VideoOnDemand;
+namespace JasonGuru\VodAdaptiveBitrateStreaming\Services;
 
 use FFMpeg\Format\Video\X264;
+use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Facades\Storage;
 
-class TranscodeService
+class LocalTranscoder
 {
     public function transcode(String $input, String $output)
     {
